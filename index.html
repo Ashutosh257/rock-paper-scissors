@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+        <title>Rock Paper Scissors!</title>
+
+    </head>
+    <body>
+        <div class="game-title">
+            <span> BOT's Score : <span class="bot-score">0</span> </span>
+            <h3>
+                Best of 3
+            </h3>
+            <span>Your Score : <span class="human-score">0</span></span>
+        </div>
+        <div class="container">
+            <div class="bot">
+                <h1>
+                    BOT
+                </h1> 
+                <img src="images/rock.svg" alt="rock hand sign" class="hand" id="bot-hand" onclick="startRound('rock')">
+            </div>
+            <div class="human">
+                <h1>
+                    YOU
+                </h1>
+                <div class="options">
+                    <img src="images/rock.svg" alt="rock hand sign" class="hand" onclick="startRound(0)">
+                    <img src="images/paper.svg" alt="paper hand sign" class="hand" onclick="startRound(1)">
+                    <img src="images/scissor.svg" alt="scissor hand sign" class="hand" onclick="startRound(2)">
+                </div>
+            </div>
+        </div>
+
+        <div class="playground">
+            <div class="bot-side">
+                <img src="images/rock.svg" alt="rock hand sign" class="playground-hand-bot" id="playground-hand-bot">
+                <span class="add">+1</span>
+                <!-- <span class="hide">+1</span> -->
+            </div>
+            <div class="human-side">
+                <img src="images/rock.svg" alt="hand sign" class="playground-hand-human" id="playground-hand-human">
+                <span class="add">+1</span>
+            </div>
+            <div id="message-container" class="message"></div>
+        </div>
+
+
+
+        <button class="btn" id="reset-btn" onclick="resetGame()">
+            NEW GAME
+        </button>
+
+        <script src="index.js"></script>
+    </body>
+</html>
