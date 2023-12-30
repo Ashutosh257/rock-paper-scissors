@@ -1,5 +1,6 @@
 
 let containerEl = document.querySelector(".container")
+let playgroundEl = document.querySelector(".playground")
 let botScoreEl = document.querySelector(".bot-score")
 let humanScoreEl = document.querySelector(".human-score")
 let messageEl = document.querySelector("#message-container")

@@ -7,18 +7,20 @@ body{
 
 
 .game-title{
-    margin: 5px 50px 0;
+    margin: 30px 50px 50px;
     font-size: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     /* color: yellowgreen; */
+    height: 20px;
 }
 
 .container{
     display: flex;
     justify-content: space-around;
-    margin: 10px 50px;
+    margin: 5px 50px 0;
+    /* border: 2px solid yellowgreen; */
 }
 
 .playground-title{
@@ -28,15 +30,16 @@ body{
 }
 
 .playground{
-    margin: 40px 50px 0;
-    height: 400px;
+    /* margin: 40px 50px 0; */
+    /* width: 400px; */
+    height: 300px;
     display: flex;
     justify-content: space-around;
     /* border: 2px solid violet; */
 }
 
 .playground-hand-bot{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     transform: rotate(90deg) scaleX(-1) scale(0.7);
 }
 
@@ -49,7 +52,7 @@ body{
 }
 
 .playground-hand-human{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     transform: rotate(-90deg) scale(0.7);
 }
 
