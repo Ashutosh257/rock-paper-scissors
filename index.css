@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: yellowgreen;
+    /* color: yellowgreen; */
 }
 
 .container{
@@ -21,17 +21,23 @@ body{
     margin: 10px 50px;
 }
 
+.playground-title{
+    margin-left: 200px;
+    text-align: start;
+    font-size: 30px;
+}
+
 .playground{
     margin: 40px 50px 0;
     height: 400px;
     display: flex;
     justify-content: space-around;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
 }
 
 .playground-hand-bot{
     margin-top: 20px;
-    transform: rotate(90deg) scaleX(-1) scale(1);
+    transform: rotate(90deg) scaleX(-1) scale(0.7);
 }
 
 .playground-hand-bot.active{
@@ -44,7 +50,7 @@ body{
 
 .playground-hand-human{
     margin-top: 20px;
-    transform: rotate(-90deg) scale(2);
+    transform: rotate(-90deg) scale(0.7);
 }
 
 .playground-hand-human.active{
@@ -105,12 +111,6 @@ body{
     display: none;
 }
 
-.bot-side{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .add{
     border: 2px solid yellow;
 }
@@ -139,10 +139,6 @@ body{
 
 .hand:hover{
     transform: scale(1.5);
-}
-
-.message{
-    display: none;
 }
 
 .show-message{

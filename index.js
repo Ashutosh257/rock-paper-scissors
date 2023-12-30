@@ -102,7 +102,7 @@ function setReusltMessage(message){
         animationHumanHand.style.display = "none"
 
         messageEl.classList.add("show-message")
-        messageEl.classList.remove("message")
+        messageEl.classList.remove("hide")
         resetBtn.style.display = "inline"
     }, 3000)
 }
@@ -126,7 +126,7 @@ function startRound(humanHand){
 
 function resetGame(){
     resetHands()
-    messageEl.classList.add("message")
+    messageEl.classList.add("hide")
     messageEl.classList.remove("show-message")
     resetBtn.style.display = "none"
 
@@ -136,8 +136,8 @@ function resetGame(){
     botScore = 0
     humanScore = 0
     botHand = 0
-    botScoreEl.textContent = "BOT's Score : " + botScore
-    humanScoreEl.textContent = "Your Score : " + humanScore
+    botScoreEl.textContent = botScore
+    humanScoreEl.textContent = humanScore
 }
 
 
