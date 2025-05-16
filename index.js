@@ -111,7 +111,7 @@ function setReusltMessage(message){
 function startRound(humanHand){
     containerEl.style.display = "none"
 
-    botHand = Math.floor(Math.random() * 2)
+    botHand = Math.floor(Math.random() * 3)
     console.log("BotHand: " + botHand)
     console.log("HumanHand: " + humanHand)
     
